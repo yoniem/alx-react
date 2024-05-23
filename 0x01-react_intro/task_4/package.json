@@ -1,0 +1,25 @@
+{
+  "name": "alx-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://yoniem.github.io/alx-react",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config config/webpack.config.js",
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "jest": "^26.6.3"
+  }
+}
